@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Book store </title>
+  <meta charset="utf-8" >
+  <meta name="description" content="COS10026" >
+  <meta name="keywords"    content="Bookstore" >
+  <meta name="author"      content="Nguyen Gia Binh" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="enquiry.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Contact us</h1>
+    <form id="contact_form" method="post" action="">
+        <fieldset>
+         <div class="row">
+
+            <div class="column">
+                <label class="text_Float_left" for="fName">First name</label>
+                <br>
+                <input class="input_text in_range_stuff" id="fName" type="text" name="uname" placeholder="e.g: Nguyen" maxlength="25" pattern="[a-zA-Z\s]*" required>
+            </div>
+
+            <div class="column">
+                <label class="text_Float_left" for="lName">Last name</label>
+                <br>
+                <input class="input_text in_range_stuff" id="lName" type="text" name="uname" placeholder="Dat Ky" maxlength="25" pattern="[a-zA-Z\s]*" required>
+            </div>
+         </div>
+
+         <div class="row2">
+
+            <div class="column2">
+                <label class="text_Float_left" for="email">Email</label>
+                <br>
+                <input class="input_text in_range_stuff" type="email" id="email" name="email" placeholder="lmao@lalaland.com" required>
+            </div>
+
+            <div class="column2">
+                <label class="text_Float_left" for="Pnumb">Phone number</label>
+                <br>
+                <input class="input_text in_range_stuff" id="Pnumb" type="text" name="phone number" placeholder="e.g: 09x xxx xxxx" maxlength="10" pattern="\d{10}*" required>
+            </div>
+         </div> 
+            
+            <div>
+                <fieldset id="fieldSet2">
+                    <label class="text_Float_left" for="sAdr">Street Address</label>
+                    <input class="input_text_2 in_range_stuff" id="sAdr" type="text" name="uname" placeholder="Your Address" maxlength="40" required>
+  
+                    <label class="text_Float_left" for="dAdr">Suburb/Town</label>
+                    <input class="input_text_2 in_range_stuff" id="dAdr" type="text" name="uname" placeholder="What District" maxlength="40" required>
+                  
+                    <label class="text_Float_left" for="cAdr">State</label>
+                    <select name="state" id="cAdr" required>
+                        <option value>Select one</option>
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                                    
+                    <label class="text_Float_left" for="pAdr">Postcode</label>
+                    <input class="input_text_2 in_range_stuff" id="pAdr" type="text" name="uname" placeholder="Bet you need to look it up online!!!" maxlength="4" pattern="\d{4}*" required>
+                        
+                </fieldset>
+            
+            </div>
+
+            <div class="preCon">
+
+                <label>Preferred Contact</label>
+
+                <br>
+                <br>
+
+                <label class="precon_label" for="email2"> <input id="email2" type="radio" name="email" value="Email" checked> Email </label>
+
+                <label class="precon_label" for="phone"> <input id="phone" type="radio" name="phone" value="Phone" > Phone </label>
+
+                <label class="precon_label" for="post"> <input id="post" type="radio" name="post" value="Post" > Post </label>
+
+            </div>
+            
+            <div class="choice">
+                <label>Please choose one</label>
+
+                <select name="book">
+                    <option class="select_text" value="book_1">Book 1</option>
+                    <option class="select_text" value="book_1">Book 1</option>
+                    <option class="select_text" value="book_1">Book 1</option>
+                </select>
+            </div>
+
+            <div class="choice2">
+
+             <p>What about it</p>
+
+             <div>
+
+                <ul>
+                    <li class="Option">
+                        <label for="Opt_1"> <input type="checkbox" id="Opt_1" name="Opt_1" value="option"> Option 1</label>
+                    </li>
+
+                    <li class="Option">
+                        <label for="Opt_2"> <input type="checkbox" id="Opt_2" value="option"> Option 2</label>
+                    </li>
+
+                    <li class="Option">
+                        <label for="Opt_3"> <input type="checkbox" id="Opt_3" value="option"> Option 3</label>
+                    </li>
+                </ul>
+             </div>
+            </div>
+            
+            <br>
+            <br>
+
+            <div>
+                <textarea name="comment" placeholder="What do you want to say" ></textarea>
+            </div>
+        </fieldset>
+
+        <div class="submit">
+            <input type="submit" id="submit" title="Send">
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

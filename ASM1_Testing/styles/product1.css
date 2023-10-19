@@ -1,0 +1,268 @@
+
+/* basic settings for table of the whole webpage accodring to the requirements */
+
+table, td, th {
+    border: 1px solid black !important; 
+}
+
+td {
+  background-color: whitesmoke;
+  color: black;
+}
+
+th {
+  background-color: black;
+  color: whitesmoke;
+}
+
+
+/* a container that float all the elements of the main content */
+.float_object {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  width: 62%;
+  padding: 2% 2% 2% 2%;
+  background-color: rgb(250, 250, 250, 1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-bottom: 5%;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+/* title of the float object 's settings */
+.float_object_title {
+  margin-bottom: 5%;
+}
+
+/* hover effect for float object (make it bigger) */
+.float_object:hover {
+  width: 70%;
+}
+
+/* a container of all the books' information */
+/* contain the cover picture and the detail information about the book */
+/* adjust the position of its contained and have some styling + support hover animation*/
+.book_profile {
+    display: flex;
+    width: 100%;
+    height: 22vh;
+    pointer-events: auto;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5)), url(../images/products/c0115486a3c8c33e25422806221e40db.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 10% 30%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 2.5%;
+    transition: all .3s ease-in; 
+    -o-transition: all .3s ease-in; 
+    -moz-transition: all .3s ease-in; 
+    -webkit-transition: all .3s ease-in;
+  }
+  
+
+/* specifications information display settings */
+.spec {
+  overflow-y: auto;
+  margin-bottom: 2.5%;
+}
+
+/* container of the cover image adjust its position to the best place */
+.cover_container {
+  margin: 1% 1% 1% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* settings for the image */
+.cover {
+  width: 100%;
+  height: 80%;
+}
+
+/* settings for the information part  */
+/* contain basic product information about price, name */
+/* also have detail drop down */
+/* adjust the information of its contained and some styling */
+.book_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: 3%;
+}
+
+
+/* settings for the detail sections, ensure that contents in it is displayed correctly */
+details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* summary tag centered */
+
+summary {
+  text-align: center;
+  margin: 2.5% 0% 2.5% 0%;
+}
+
+
+/* ensure all the elements in book details have margin on the top */
+.book_detail * {
+  margin-top: 2%;
+}
+
+
+/* a container contain detail information about what is written in the book*/
+/* contain chapter list and summary */
+.book_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+/* contain 2 smaller div chapter list and summary => adjust their position */
+.content_container {
+  display: flex;
+
+  margin-bottom: 5%;
+}
+
+/* contain an ol listed all the chapter inside the book */
+/* have some styling and width adjust */
+.chapter_list {
+  width: 30%;
+  border-right: 1px solid black;
+  margin-left: 2.5%;
+}
+
+/* contain a summary of the book => margin adjust and width adjust */
+.summary {
+  margin-left: 5%;
+  width: 70%;
+}
+
+/* adjust margin book content heading */
+.book_content h2 {
+  margin: 5% 0% 5% 0%;
+}
+
+/* recommend */
+/* .rcm_display {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+} */
+
+
+/* adjust the position of aside to ensure that it will not being pushed down when the float object is enlarging during hover*/
+.float_object:hover ~ aside {
+  width: 20%;
+  margin-right: 2%;
+}
+
+
+
+
+/* the recommendation part of the website in aside */
+
+/* have position and shape adjusted, some styling and hover animation supported */
+aside {
+    width: 25%;
+    position: relative;
+    float: right;
+    padding: 1%;
+    margin: 0% 3% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/* contain the cover image and the detail infor of the recommended book */
+/* have display setting to make the detail overlap on the cover */
+.rcm_info {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    margin: 10% 0% 10% 0%;
+    /* transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out; 
+    -moz-transition: all .5s ease-in-out; 
+    -webkit-transition: all .5s ease-in-out; */
+    }
+
+
+/* make the detail overlap the cover */
+.rcm_detail, .rcm_cover {
+    grid-row: 1/2;
+}
+
+
+/* hide the detail part and make it overlap the cover + some items styling */
+.rcm_detail {
+  display: none;
+  width: 100%;
+  grid-column: 1/-2;
+
+  text-align: center;
+}
+
+/* font size + margin + shadow setting for detail texts */
+.rcm_bookname , .rcm_author, .rcm_price, .rcm_button {
+    font-size: 0.8vw;
+    margin: 2.5%;
+    text-shadow: 1px 1px 0.2px;
+}
+
+/* show the detail information when the cover is hovered */
+.rcm_cover:hover ~ .rcm_detail {
+  display: flex;
+  background-color: rgb(250, 250, 250, 0.6);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling for the cover of the recommendation book + help the detail to overlap it */
+.rcm_cover {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  grid-column: 1/2;
+}
+
+/* padding adjustment for main */
+/* main {
+    padding: 5% 0% 5% 5%;
+} */
+
+
+/* make book profile display in a proper section only by overflow */
+.book_profile:hover {
+  overflow: auto;
+
+  height: 45vh;
+}
+
+/* recommendation heading size */
+.rcm_area_name {
+  font-size: 175%;
+}

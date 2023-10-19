@@ -1,0 +1,38 @@
+@media screen and (max-width: 767px) {
+  .featured-banner {
+    height: 300px;
+  }
+
+  .featured-banner-image {
+    animation: none;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .featured-banner {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .featured-banner {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .featured-banner {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    flex: 100%;
+    padding: 0;
+  }
+}
